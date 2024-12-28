@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hand Gesture Recognition</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script> <!-- Optional for better performance -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    #webcam {
+      width: 320px;
+      height: 240px;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hand Gesture Recognition</h1>
+  <video id="webcam" autoplay playsinline></video>
+  <button id="startWebcam">Start Webcam</button>
+  <div id="output">Prediction will appear here...</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
